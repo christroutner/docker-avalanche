@@ -1,0 +1,10 @@
+avalanche:
+  image: avaplatform/avalanchego
+  container_name: avax
+  #command: ["daemon", "--migrate=true", "--enable-pubsub-experiment"]
+  ports:
+    - 9650:9650
+    - 9651:9651
+  #volumes:
+  #  - ./ipfs-data:/data/ipfs
+  #restart: unless-stopped
