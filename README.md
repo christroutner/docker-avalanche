@@ -10,6 +10,8 @@ Runs an Avalanche full node inside a Docker container.
 - Start the full node with `docker-compose up -d`
 - Monitor the node with `docker logs -f avax`
 
+Full node data is saved to the `avax-data` directory. Edit the `volume` property of the `docker-compose.yml` file if you want to save the data to a different directory.
+
 ## License
 
 [MIT](./LICENSE.md)
