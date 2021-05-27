@@ -2,7 +2,12 @@ avalanche:
   image: avaplatform/avalanchego
   container_name: avax
   #command: ["daemon", "--migrate=true", "--enable-pubsub-experiment"]
-  command: ["/avalanchego/build/avalanchego", "--db-dir=/data/avax"]
+  command:
+    [
+      "/avalanchego/build/avalanchego",
+      "--db-dir=/data/avax",
+      "--bootstrap-retry-max-attempts=10000",
+    ]
   ports:
     - 9650:9650
     - 9651:9651
