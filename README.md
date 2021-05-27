@@ -9,3 +9,7 @@ Runs an Avalanche full node inside a Docker container.
 - Create a `avax-data` directory.
 - Start the full node with `docker-compose up -d`
 - Monitor the node with `docker logs -f avax`
+
+## License
+
+[MIT](./LICENSE.md)

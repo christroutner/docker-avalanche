@@ -8,4 +8,4 @@ avalanche:
     - 9651:9651
   volumes:
     - ./avax-data:/data/avax
-  #restart: unless-stopped
+  restart: unless-stopped
