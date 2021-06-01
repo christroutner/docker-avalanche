@@ -8,6 +8,7 @@ avalanche:
       "--db-dir=/data/avax",
       "--bootstrap-retry-max-attempts=10000",
       "--api-admin-enabled=true",
+      "--http-host=0.0.0.0",
     ]
   ports:
     - 9650:9650
