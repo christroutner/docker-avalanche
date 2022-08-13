@@ -6,9 +6,10 @@ avalanche:
     [
       "/avalanchego/build/avalanchego",
       "--db-dir=/data/avax",
-      "--bootstrap-retry-max-attempts=10000",
+#      "--bootstrap-retry-max-attempts=10000",
       "--api-admin-enabled=true",
       "--http-host=0.0.0.0",
+      "--bootstrap-retry-enabled"
     ]
   ports:
     - 9650:9650
