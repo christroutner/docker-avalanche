@@ -9,11 +9,14 @@ avalanche:
 #      "--bootstrap-retry-max-attempts=10000",
       "--api-admin-enabled=true",
       "--http-host=0.0.0.0",
-      "--bootstrap-retry-enabled"
+      "--bootstrap-retry-enabled",
+      "--public-ip=78.46.129.7"
     ]
   ports:
     - 9650:9650
     - 9651:9651
   volumes:
     - ./avax-data:/data/avax
+    - ./staking/staker.key:/root/.avalanchego/staking/staker.key
+    - ./staking/staker.crt:/root/.avalanchego/staking/staker.crt
   restart: unless-stopped
