@@ -19,4 +19,6 @@ avalanche:
     - ./avax-data:/data/avax
     - ./staking/staker.key:/root/.avalanchego/staking/staker.key
     - ./staking/staker.crt:/root/.avalanchego/staking/staker.crt
+    - ./chain-config.json:/root/.avalanchego/configs/chains/C/config.json
+    - ./pruning-data:/root/pruning-data
   restart: unless-stopped

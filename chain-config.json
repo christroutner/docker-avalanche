@@ -1,0 +1,5 @@
+{
+  "offline-pruning-enabled": false,
+  "offline-pruning-data-directory": "/root/pruning-data"
+}
+
