@@ -10,7 +10,8 @@ avalanche:
       "--api-admin-enabled=true",
       "--http-host=0.0.0.0",
       "--bootstrap-retry-enabled",
-      "--public-ip=78.46.129.7"
+      "--public-ip=78.46.129.7",
+      "--http-allowed-hosts=*"
     ]
   ports:
     - 9650:9650
